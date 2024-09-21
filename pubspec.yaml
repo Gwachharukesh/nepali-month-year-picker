@@ -1,6 +1,6 @@
 name: nepali_month_year_picker
 description: The month year picker inspired by the Flutter's date picker design.
-version: 0.0.4+4
+version: 0.0.5+5
 homepage: https://github.com/kojurohan42/nepali-month-year-picker.git
 
 environment:
