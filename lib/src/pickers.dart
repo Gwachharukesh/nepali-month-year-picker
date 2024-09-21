@@ -99,7 +99,7 @@ class MonthPickerState extends State<MonthPicker> {
       physics: widget.orientation == Orientation.landscape
           ? const BouncingScrollPhysics()
           : const NeverScrollableScrollPhysics(),
-      padding: const EdgeInsets.all(6.0),
+      padding: const EdgeInsets.all(8.0),
       crossAxisCount: 4,
       children: [
         for (var i = 0; i < 12; i++)

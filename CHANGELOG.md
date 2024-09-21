@@ -4,3 +4,5 @@
 - Platform Support.
 ## v0.0.3+3
 - Locale i.e Locale('en') or Locale('ne') Support.
+## v0.0.4+4
+- Minor UI fixes and packages version updated.

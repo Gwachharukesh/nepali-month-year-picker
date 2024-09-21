@@ -8,10 +8,10 @@ import 'pickers.dart';
 import 'utils.dart';
 
 // ################################# CONSTANTS #################################
-const _portraitDialogSize = Size(320.0, 480.0);
+const _portraitDialogSize = Size(400.0, 520.0);
 const _landscapeDialogSize = Size(496.0, 344.0);
 const _dialogSizeAnimationDuration = Duration(milliseconds: 200);
-const _datePickerHeaderLandscapeWidth = 192.0;
+const _datePickerHeaderLandscapeWidth = 240.0;
 const _datePickerHeaderPortraitHeight = 120.0;
 const _headerPaddingLandscape = 16.0;
 
@@ -129,7 +129,7 @@ class _MonthYearPickerDialogState extends State<MonthYearPickerDialog> {
     final orientation = MediaQuery.of(context).orientation;
     final offset =
         Theme.of(context).materialTapTargetSize == MaterialTapTargetSize.padded
-            ? const Offset(0.0, 24.0)
+            ? const Offset(0.0, 8.0)
             : Offset.zero;
     switch (orientation) {
       case Orientation.portrait:
@@ -265,7 +265,7 @@ class _MonthYearPickerDialogState extends State<MonthYearPickerDialog> {
         final pickerMaxWidth =
             _landscapeDialogSize.width - _datePickerHeaderLandscapeWidth;
         final width = constraints.maxHeight < pickerMaxWidth
-            ? constraints.maxHeight / 3.0 * 4.0
+            ? constraints.maxHeight / 3.5 * 3.75
             : null;
 
         return Stack(
@@ -329,7 +329,7 @@ class _MonthYearPickerDialogState extends State<MonthYearPickerDialog> {
       child: Dialog(
         insetPadding: const EdgeInsets.symmetric(
           horizontal: 16.0,
-          vertical: 24.0,
+          vertical: 16.0,
         ),
         clipBehavior: Clip.antiAlias,
         child: AnimatedContainer(
